@@ -12,7 +12,7 @@ use App\Http\Controllers\DispositivoController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*Holaaa*/
 Route::get('/', function () {
     return view('welcome');
 });
