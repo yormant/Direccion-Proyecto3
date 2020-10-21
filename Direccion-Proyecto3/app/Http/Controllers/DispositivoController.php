@@ -13,7 +13,9 @@ class DispositivosController extends Controller
      */
     public function index()
     {
-        //
+        return view('dispositivo.index',[
+            'dispositivos' => Dispositivo::all()
+        ]);
     }
 
     /**
