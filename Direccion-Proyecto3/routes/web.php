@@ -13,6 +13,7 @@ use App\Http\Controllers\DispositivoController;
 |
 */
 /*Holaaa*/
+/*ensayo de eli */
 Route::get('/', function () {
     return view('welcome');
 });
