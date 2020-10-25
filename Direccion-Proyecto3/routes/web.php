@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DispositivoController;
+use App\Http\Controllers\MarcaController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,3 +21,5 @@ Route::get('/', function () {
 });
 
 Route::resource('dispositivos', DispositivoController::class);
+Route::resource('marcas', MarcaController::class);
+

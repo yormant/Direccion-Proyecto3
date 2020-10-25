@@ -4,14 +4,14 @@
 <div class="row">
     <div class="col bg-primary">
         <br>
-         <h1 class="text-center">Dispositivos Moviles</h1>
+         <h1 class="text-center">Marcas Moviles</h1>
      </div>    
 </div>
 <br>
     <div class="row">
         <div class="col text-left">
-            <a href="/dispositivos/create" class="btn btn-primary">Nuevo Dispositivo</a>
-            <a class="btn btn-info" href="/marcas">Marcas</a>
+            <a href="/marcas/create" class="btn btn-primary">Nueva marca</a>
+            <a class="btn btn-info" href="/dispositivos">Back</a>
 
          </div>
     </div>
@@ -21,20 +21,16 @@
              <table class="table table-bordered table-striped">
                  <thead>
                        
-                     <th>Id</th>
-                     <th>Nombre Dispositivo</th>
-                     <th>Precio Dispositivo</th>
-                     <th>Descripcion Dispositivo</th>
-                     <th>Edita</th>
+                     <th>Nombre Marca</th>
+                     <th>Descripcion Marca</th>
+                     <th>Editar</th>
                      <th>Eliminar</th>
                  </thead>
                  <tbody>
-                     @foreach ($dispositivos as $dispositivo)
+                     @foreach ($marcas as $marca)
                          <tr>
-                             <td>{{$dispositivo->id}}</td>
-                             <td>{{$dispositivo->nombre}}</td>
-                             <td>{{$dispositivo->precio}}</td>
-                             <td>{{$dispositivo->descripcion}}</td>
+                             <td>{{$marca->name}}</td>
+                             <td>{{$marca->description}}</td>
                              <td>
                                 <a class="btn btn-success" href="">Edit</a>
 
