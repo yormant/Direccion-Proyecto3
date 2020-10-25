@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 use App\Models\Dispositivo;
 use Illuminate\Http\Request;
 
-class DispositivosController extends Controller
+class DispositivoController extends Controller
 {
     /**
      * Display a listing of the resource.
