@@ -25,7 +25,7 @@ class DispositivoController extends Controller
      */
     public function create()
     {
-        //
+        return view('dispositivo.create');
     }
 
     /**
@@ -36,7 +36,13 @@ class DispositivoController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $dispositivo = new Dispositivo();
+        $dispositivo->id = $request->get('id');
+        $dispositivo->nombre = $request->get('nombre');
+        $dispositivo->precio = $request->get('precio');
+        $dispositivo->descripcion = $request->get('descripcion');
+        $dispositivo->save();
+        return redirect('/dispositivos');
     }
 
     /**
