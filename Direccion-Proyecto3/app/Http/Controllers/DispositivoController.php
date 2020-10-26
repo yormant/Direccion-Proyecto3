@@ -87,6 +87,8 @@ class DispositivoController extends Controller
      */
     public function destroy($id)
     {
-        //
+       $dispositivo = dispositivo::find($id);
+       $dispositivo->delete();
+       return back();
     }
 }
