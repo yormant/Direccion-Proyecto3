@@ -14,6 +14,7 @@ class CreateDispositivos extends Migration
     public function up()
     {
         Schema::create('dispositivos', function (Blueprint $table) {
+            //FALTA EL ID
             $table->string('nombre');
             $table->string('precio');
             $table->text('descripcion');
