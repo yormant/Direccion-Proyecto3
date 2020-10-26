@@ -40,7 +40,7 @@
 
                              </td>
                              <td>
-                                 <form action="" method="POST">
+                                 <form action="/dispositivos/{{dispositivo->id}}" method="POST">
                                     @csrf
                                     @method('DELETE')
                                     <input
